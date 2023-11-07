@@ -1,4 +1,4 @@
-# Alpine image with node.js
+# Nginx Image
 FROM nginx:latest
 # Copy your custom Nginx configuration file to the container
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
