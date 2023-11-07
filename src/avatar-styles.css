@@ -1,0 +1,122 @@
+@import "@radix-ui/colors/black-alpha.css";
+@import "@radix-ui/colors/violet.css";
+
+.tool-links {
+  margin-right: 6rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.tool-menu {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  display: none;
+}
+
+.brand-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 6rem;
+  margin-right: auto;
+  text-decoration: none;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.brand-name-img {
+  width: 5.5rem;
+}
+
+.brand-name-text {
+  color: #000000;
+  font-style: bold;
+  font-size: 2.3rem;
+  font-weight: inherit;
+  text-align: center;
+}
+
+.AvatarRoot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  user-select: none;
+  width: 36px;
+  height: 36px;
+}
+
+.AvatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.AvatarFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #71717a;
+  color: #4f46e5;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .brand-name-img {
+    width: 4rem;
+  }
+  .brand-name-text {
+    font-size: 1.6rem;
+  }
+  .AvatarRoot {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 850px) {
+  .header-logo {
+    font-size: 1.3rem;
+  }
+  .tool-links {
+    margin-right: 3rem;
+  }
+
+  .AvatarRoot {
+    width: 24px;
+    height: 24px;
+  }
+  .brand-name {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-logo {
+    font-size: 1rem;
+  }
+
+  .AvatarRoot {
+    width: 20px;
+    height: 20px;
+  }
+
+  .brand-name {
+    margin-left: 1.4rem;
+    gap: 0.8rem;
+  }
+
+  .tool-links {
+    display: none;
+  }
+
+  .tool-menu {
+    display: flex;
+  }
+}

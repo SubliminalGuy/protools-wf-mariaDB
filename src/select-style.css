@@ -1,0 +1,142 @@
+@import "@radix-ui/colors/black-alpha.css";
+@import "@radix-ui/colors/mauve.css";
+@import "@radix-ui/colors/violet.css";
+
+/* reset */
+
+button {
+  all: unset;
+}
+
+.SelectTrigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 1;
+  height: 35px;
+  width: 25%;
+  gap: 5px;
+  background-color: white;
+  color: #000000;
+  box-shadow: 0 2px 10px #000000;
+}
+.SelectTrigger:hover {
+  background-color: lightgrey;
+}
+.SelectTrigger:focus {
+  box-shadow: 0 0 0 2px black;
+}
+.SelectTrigger[data-placeholder] {
+  color: #000000;
+}
+
+.SelectIcon {
+  color: Var(--violet-11);
+}
+
+.SelectContent {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35),
+    0px 10px 20px -15px rgba(22, 23, 24, 0.2);
+}
+
+.SelectViewport {
+  padding: 15px 20px;
+}
+
+.SelectItem {
+  font-size: 16px;
+  line-height: 1;
+  color: #000000;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 0 35px 0 25px;
+  position: relative;
+  user-select: none;
+}
+.SelectItem[data-disabled] {
+  color: var(--mauve-8);
+  pointer-events: none;
+}
+.SelectItem[data-highlighted] {
+  outline: none;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.SelectLabel {
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--mauve-11);
+}
+
+.SelectItemIndicator {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SelectScrollButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  background-color: white;
+  color: var(--violet-11);
+  cursor: default;
+}
+
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  height: 35px;
+  width: 20%;
+  margin-top: 3rem;
+  background-color: white;
+  color: #000000;
+}
+.Button:hover {
+  background-color: var(--mauve-3);
+}
+.Button:focus {
+  box-shadow: 0 0 0 2px lightgrey;
+}
+.Button:active {
+  background-color: grey;
+}
+
+
+@media (max-width: 1000px) {
+  .SelectTrigger {
+    font-size: 14px;
+    width: 50%;
+    gap: 5px;
+  }
+
+  .SelectLabel {
+    font-size: 12px;
+  }
+
+  .Button {
+    font-size: 14px;
+    margin-top: 5rem;
+    width: 40%;
+  }
+}
